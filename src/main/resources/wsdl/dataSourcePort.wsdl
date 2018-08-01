@@ -62,6 +62,7 @@
       <xs:element minOccurs="0" name="nsegsoc" type="xs:string"/>
       <xs:element minOccurs="0" name="numtel" type="xs:string"/>
       <xs:element minOccurs="0" name="fecbaja" type="xs:string"/>
+      <xs:element minOccurs="0" name="refCatastro" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 

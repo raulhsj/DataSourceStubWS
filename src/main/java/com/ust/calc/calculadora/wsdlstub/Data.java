@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.11 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2018.07.24 a las 11:16:10 AM CEST 
+// Generado el: 2018.08.01 a las 08:30:50 AM CEST 
 //
 
 
@@ -39,6 +39,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="nsegsoc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="numtel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="fecbaja" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="refCatastro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -64,7 +65,8 @@ import javax.xml.bind.annotation.XmlType;
     "tipocontrato",
     "nsegsoc",
     "numtel",
-    "fecbaja"
+    "fecbaja",
+    "refCatastro"
 })
 public class Data {
 
@@ -84,6 +86,7 @@ public class Data {
     protected String nsegsoc;
     protected String numtel;
     protected String fecbaja;
+    protected String refCatastro;
 
     /**
      * Obtiene el valor de la propiedad id.
@@ -468,5 +471,54 @@ public class Data {
     public void setFecbaja(String value) {
         this.fecbaja = value;
     }
+
+    /**
+     * Obtiene el valor de la propiedad refCatastro.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getRefCatastro() {
+        return refCatastro;
+    }
+
+    /**
+     * Define el valor de la propiedad refCatastro.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setRefCatastro(String value) {
+        this.refCatastro = value;
+    }
+
+	public Data(String id, String name, String email, String salary, String dni, String fecnac, String direccion,
+			String ctacte, String estadocivil, String sexo, String fecalta, String categoria, String tipocontrato,
+			String nsegsoc, String numtel, String fecbaja, String refCatastro) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.salary = salary;
+		this.dni = dni;
+		this.fecnac = fecnac;
+		this.direccion = direccion;
+		this.ctacte = ctacte;
+		this.estadocivil = estadocivil;
+		this.sexo = sexo;
+		this.fecalta = fecalta;
+		this.categoria = categoria;
+		this.tipocontrato = tipocontrato;
+		this.nsegsoc = nsegsoc;
+		this.numtel = numtel;
+		this.fecbaja = fecbaja;
+		this.refCatastro = refCatastro;
+	}
+    
+    
 
 }
